@@ -43,14 +43,16 @@ function ajouterVues(desAlbums) {
 }
 
 
-try {
-    const albums = [...mesDatas]
+const albums = [...mesDatas]
+
+if (albums.length > 0) {
     console.log(albums)
     // À compléter
 
-
-} catch (err) {
+}
+else {
     loader.innerText = "Impossible de contacter la ressource distante"
     loader.style.color = 'red'
 }
+
 
