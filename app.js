@@ -1,11 +1,7 @@
 import {mesDatas} from "./datas";
 
 const wrapper = document.querySelector('#albumsAvecVues')
-const loader = document.createElement('p')
 let albumsAvecVues = []
-
-loader.innerText = 'Chargement en cours...'
-wrapper.append(loader)
 
 
 /**
@@ -42,17 +38,6 @@ function ajouterVues(desAlbums) {
 
 }
 
-
 const albums = [...mesDatas]
-
-if (albums.length > 0) {
-    console.log(albums)
-    // À compléter
-
-}
-else {
-    loader.innerText = "Impossible de contacter la ressource distante"
-    loader.style.color = 'red'
-}
-
-
+console.log(albums)
+// À compléter
