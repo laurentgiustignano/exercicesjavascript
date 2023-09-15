@@ -1,4 +1,4 @@
-import {fetchJson} from "./functions/api.js";
+import {mesDatas} from "./datas";
 
 const wrapper = document.querySelector('#albumsAvecVues')
 const loader = document.createElement('p')
@@ -44,7 +44,7 @@ function ajouterVues(desAlbums) {
 
 
 try {
-    const albums = await fetchJson('https://jsonplaceholder.typicode.com/albums')
+    const albums = [...mesDatas]
     console.log(albums)
     // À compléter
 
