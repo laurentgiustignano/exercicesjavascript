@@ -1,4 +1,4 @@
-import {mesDatas} from "./datas";
+import {mesDatas} from "./datas.js";
 
 const wrapper = document.querySelector('#albumsAvecVues')
 let albumsAvecVues = []
